@@ -33,8 +33,7 @@ export const updateSelectedServices = (
             }
         }
     }
-
-    if (action.type == "Deselect") {
+    else {
         if (newSelection.includes(action.service)) {
             let index = newSelection.indexOf(action.service);
             delete newSelection[index];
